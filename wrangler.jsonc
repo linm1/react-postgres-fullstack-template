@@ -18,13 +18,18 @@
 	// Hyperdrive binding is optional - if not provided, app will use mock data
 	// To enable Hyperdrive, uncomment and configure properly:
 	/*
-    "hyperdrive": [
-      {
-        "binding": "HYPERDRIVE",
-        "id": "YOUR_HYPERDRIVE_ID",
-        "localConnectionString": "postgresql://myuser:mypassword@localhost:5432/mydatabase"
-      }
-    ],
+	// Add nodejs_compat compatibility flag to support common database drivers
+	 "compatibility_flags": [
+	   "nodejs_compat"
+	 ],
+	
+	// Add this to your wrangler.jsonc
+	 "hyperdrive": [
+	  {
+	    "binding": "HYPERDRIVE",
+	    "id": "92527d36f0e64062b0d99df59f344765",
+	  }
+	],
     */
 	"placement": {
 		"mode": "smart"
